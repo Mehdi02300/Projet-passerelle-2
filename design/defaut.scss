@@ -1,0 +1,73 @@
+// Définition des variables personnalisées
+$primary: #e3f2fd;
+$secondary: #23192d;
+
+// Modification du map $theme-colors de Bootstrap
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+.nav-link:hover, button:hover {
+  font-weight: bolder;
+}
+
+// Importation des fichiers nécessaires pour que les variables soient prises en compte
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/_mixins";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+#blog, #projet {
+  flex: 1;
+}
+
+// Styles pour les cartes
+.card-body {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 1;
+  right: 1; 
+  margin: 1rem;
+  border-radius: 5px;
+}
+
+.card-img-top {
+  border-radius: 5px;
+}
+
+.img-height {
+  height: 400px !important;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-footer, .card-body-main {
+  background-color: $secondary !important;
+  color: white !important;
+}
+
+.hover-bold:hover {
+  font-weight: bold;
+}
+
+// Style pour les caroussels
+
+.carousel-item {
+  transition: transform 1s ease-in-out;
+}
+
+// Style pour les modales
+.card-img-mod {
+  height: 70%;
+  width: 70%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}

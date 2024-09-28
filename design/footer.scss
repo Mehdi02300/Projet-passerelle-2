@@ -1,0 +1,40 @@
+// Définition des variables personnalisées
+$primary: #e3f2fd;
+$secondary: #23192d;
+
+// Modification du map $theme-colors de Bootstrap
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary
+);
+
+// Importation des fichiers nécessaires pour que les variables soient prises en compte
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/_mixins";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+footer {
+    background-color: $secondary;
+    padding: 2rem 0;
+    color: white;
+  
+    ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding-left: 0;
+        gap: 1.5rem;
+        
+        li {
+            a {
+                font-size: 1.5rem;
+                transition: color 0.3s ease;
+  
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+    }
+  }
