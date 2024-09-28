@@ -4,7 +4,7 @@ Ce projet est un portfolio/blog, conçue pour permettre aux utilisateurs de déc
 
 Fonctionnalités principales :
 
-Page d'accueil interactive : Les utilisateurs accèdent à une interface accueillante qui affiche les derniers articles publiés.
+Page d'accueil interactive : Les utilisateurs accèdent à une interface accueillante qui affiche les derniers articles publiés. <br>
 Inscription et connexion sécurisées : Les utilisateurs peuvent créer un compte, se connecter et interagir sur la plateforme.
 Gestion des articles : Les utilisateurs inscrits peuvent commenter les articles, tandis que les administrateurs ont la possibilité de créer de nouveaux articles (projets ou blogs).
 Ajout d’images : Lors de la création d’un article, les administrateurs peuvent uploader des images pour enrichir le contenu.
